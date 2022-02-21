@@ -1,11 +1,15 @@
 <template>
   <div>
-    <div class="loading" :style="isLoading">
-      <div class="lds-ripple">
-        <div></div>
-        <div></div>
+
+    <div>
+      <div class="loading" :style="isLoading">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
+
 
     <div id="google_translate_element2"></div>
 
@@ -55,7 +59,7 @@
 
       <center style="margin-top: -35px">
         <img :src="'https://storage.googleapis.com/noxus-up-file/'+allSettings.ico" width="30"
-             height="30">
+             height="30" @click="tab=0">
       </center>
 
     </div>
